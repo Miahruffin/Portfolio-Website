@@ -1,0 +1,11 @@
+.feature-reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.reel-video {
+    width: 80%; /* Adjust based on preference */
+    max-height: 90vh; /* Limits the video height */
+}

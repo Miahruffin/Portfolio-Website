@@ -1,0 +1,25 @@
+.blog-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+    flex: 1;
+    min-width: 250px; /* Minimum width before wrapping */
+    max-width: 300px; /* Maximum width of cards */
+    border: 1px solid black;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+}

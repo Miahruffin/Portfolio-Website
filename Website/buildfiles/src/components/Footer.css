@@ -1,0 +1,17 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background, adjust color as needed */
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 60%; /* Adjusts to 60% width, leaving about 20% on either end */
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333; /* Dark line color, adjust as needed */
+    margin: 10px 0; /* Spacing above and below the line */
+}
