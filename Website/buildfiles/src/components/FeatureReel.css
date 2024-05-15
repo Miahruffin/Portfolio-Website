@@ -1,11 +1,15 @@
 .feature-reel {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust the height as needed */
+    justify-content: center;
 }
 
-.reel-video {
-    width: 80%; /* Adjust based on preference */
-    max-height: 90vh; /* Limits the video height */
+s .reel-video {
+    max-width: 100%;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
 }

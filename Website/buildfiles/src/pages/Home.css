@@ -2,9 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
     height: 100vh;
-    color: white;
-    background-color: black; /* Set the background color */
+    /* Set the background color */
 }
 
 .text-content {
@@ -13,22 +15,43 @@
     padding-left: 10%;
 }
 
+.text-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
 .email-form {
     margin-top: 20px;
 }
 
-.email-form input, .email-form button {
+.email-form input,
+.email-form button {
     padding: 10px;
     margin-right: 5px;
     border: none;
     outline: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 5px;
 }
 
 .email-form button {
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.email-form button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
 }
 
 .privacy-text {
@@ -45,7 +68,8 @@
 }
 
 .image-content img {
-    max-width: 50%; /* Adjust size as needed */
+    max-width: 50%;
+    /* Adjust size as needed */
 }
 
 @media (max-width: 800px) {
@@ -54,7 +78,8 @@
         padding: 20px;
     }
 
-    .text-content, .image-content {
+    .text-content,
+    .image-content {
         padding-left: 0;
         text-align: center;
         flex: none;
@@ -68,15 +93,20 @@
 
 @media (max-width: 600px) {
     .home-container {
-        justify-content: flex-start; /* Align content to the start */
+        justify-content: flex-start;
+        /* Align content to the start */
     }
 
-    .email-form input, .email-form button {
-        width: 100%; /* Make input and button take full width */
-        margin-top: 5px; /* Space between input fields and button */
+    .email-form input,
+    .email-form button {
+        width: 100%;
+        /* Make input and button take full width */
+        margin-top: 5px;
+        /* Space between input fields and button */
     }
 
     .image-content {
-        display: none; /* Hide the image when the screen width is 600px or less */
+        display: none;
+        /* Hide the image when the screen width is 600px or less */
     }
 }

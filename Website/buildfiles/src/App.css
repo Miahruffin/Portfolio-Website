@@ -1,27 +1,40 @@
 /* App.css */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    height: 100%; /* Ensure full height */
-    width: 100%; /* Ensure full width */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    height: 100%;
+    /* Ensure full height */
+    width: 100%;
+    /* Ensure full width */
 }
 
-/* Set default font and background colors using CSS variables */
+/* Set default background colors using CSS variables */
+/* App.css */
 :root {
-    --primary-background: #282c34; /* Dark gray, adjust to your preference */
-    --text-color: #FFFFFF; /* White text, adjust as needed */
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    --background-color: #000000;
+    --text-color: #ffffff;
 }
 
 body {
-    background-color: var(--primary-background);
+    background-color: var(--background-color);
     color: var(--text-color);
-    font-family: Arial, sans-serif; /* Example font */
+    transition: background-color 0.3s, color 0.3s;
 }
 
+
 .component-full-height {
-    height: 100vh; /* Full viewport height */
-    width: 100vw; /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    width: 100vw;
+    /* Full viewport width */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +44,3 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
